@@ -1,3 +1,2 @@
-Plan for today:
--Create mockup of "Hello World" page
--Create hello world page
+19 Nov 2015:
+-Created home page.
