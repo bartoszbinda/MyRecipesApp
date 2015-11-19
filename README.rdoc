@@ -1,0 +1,3 @@
+Plan for today:
+-Create mockup of "Hello World" page
+-Create hello world page
