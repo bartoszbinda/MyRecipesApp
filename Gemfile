@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.0.0'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'autoprefixer-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -31,19 +31,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+# gem 'capistrano-rails', group: :developments
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-end
-group :development, :test do
   gem 'sqlite3'
   gem 'pry'
 end
+
 group :production do 
   gem 'pg'
-  gem 'rails-12factor'
+  gem 'rails_12factor'
 end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
