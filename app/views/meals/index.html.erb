@@ -1,0 +1,19 @@
+<h1>Menu</h1>
+ 
+<table class="table-striped table">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+  </tr>
+ 
+  <% @meals.each do |meal| %>
+    <tr>
+      <td><%= meal.id%></td>
+      <td><%= meal.name %></td>
+      <td><%= meal.description %></td>
+      <td><%= meal.price %></td>
+    </tr>
+  <% end %>
+</table>
