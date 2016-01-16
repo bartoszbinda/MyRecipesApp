@@ -1,8 +1,12 @@
 <div class="center jumbotron">
-    <h1>Welcome to myRecipes</h1>
-    <h2>This is the offical webpage to the MyRecipes App</h2>
-    <%= link_to "Sign up now!", "", class: "btn btn-lg btn-success" %>
-    
+    <h1>Welcome to Cafeteria Ordering System</h1>
+    <% if user_signed_in? %>
+Logged in as <strong><%= current_user.email %></strong>.
+
+    <h2>This is the offical webpage of Cafeteria</h2>
+    <% else %>
+    <%= link_to "Sign up now!", "users/sign_up", class: "btn btn-lg btn-success" %>
+    <% end %>
 </div>
 <div class="row">
     <div class="col-lg-4">

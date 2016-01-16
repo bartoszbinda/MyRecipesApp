@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'cookpage/index'
   get 'cookpage', to: "cookpage#index"
   resources :products
