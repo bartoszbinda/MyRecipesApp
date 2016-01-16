@@ -9,6 +9,7 @@ gem 'rails', '4.2.4'
 gem "better_errors"
 #https://github.com/charliesome/better_errors
 gem "binding_of_caller"
+gem 'devise'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

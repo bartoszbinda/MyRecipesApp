@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160116184227) do
+ActiveRecord::Schema.define(version: 20160116213234) do
 
   create_table "chefs", force: :cascade do |t|
     t.string   "chefname"
@@ -31,6 +31,14 @@ ActiveRecord::Schema.define(version: 20160116184227) do
     t.decimal  "price"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.string   "status"
+    t.decimal  "totalsum"
+    t.text     "item"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "products", force: :cascade do |t|

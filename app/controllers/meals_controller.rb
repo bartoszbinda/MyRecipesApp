@@ -5,6 +5,9 @@ class MealsController < ApplicationController
   def new
     @meal = Meal.new
   end
+  def edit
+    @meal = Meal.find(params[:id])
+  end
   def create
     @meal = Meal.new(meal_params)
     if @meal.save
@@ -15,6 +18,11 @@ class MealsController < ApplicationController
   end
   def show
     @meal = Meal.find(params[:id])
+  end
+  def destroy
+    @meal = Meal.find(params[:id])
+    @meal.destroy
+    redirect_to meals_path
   end
   private
   def meal_params
