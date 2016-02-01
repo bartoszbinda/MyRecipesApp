@@ -1,5 +1,6 @@
 <h1>Menu</h1>
- 
+ <% if user_signed_in? %>
+
 <table class="table-striped table">
   <tr>
     <th>ID</th>
@@ -24,3 +25,6 @@
   
 </table>
 <button type="button" class="btn btn-info"><%=link_to 'Add new meal', 'meals/new' %></button>
+<% else %>
+<h1> Access denied!</h1>
+<% end %>
